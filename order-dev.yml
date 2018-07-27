@@ -1,0 +1,13 @@
+server:
+  port: 7006
+  
+spring:
+  application:
+    name: order
+    
+eureka:
+   client:
+    service-url:
+       defaultZone: http://li:123@localhost:8761/eureka
+   instance:
+    instance-id: ${spring.application.name}:${server.port}

@@ -19,5 +19,5 @@ eureka:
        defaultZone: http://li:123@localhost:8761/eureka
    instance:
     instance-id: ${spring.application.name}:${server.port}
-env: dev3
+env: dev2
       

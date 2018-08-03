@@ -16,7 +16,7 @@ management:
 eureka:
    client:
     service-url:
-       defaultZone: http://li:123@localhost:8761/eureka
+       defaultZone: http://li:123@localhost:8761/eureka,http://li:123@eurekaserver1:8000/eureka/
    instance:
     instance-id: ${spring.application.name}:${server.port}
 env: dev1
